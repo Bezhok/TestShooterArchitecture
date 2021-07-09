@@ -37,7 +37,7 @@ namespace Weapons
 
         public override void Use()
         {
-            // if (timeSinceLastCall < 1/fireRate)
+            // if (timeSinceLastCall > 1/fireRate)
             {
                 if (currentBulletCountInMagazine == 0)
                 {
