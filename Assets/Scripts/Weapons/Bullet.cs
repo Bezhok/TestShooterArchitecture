@@ -4,11 +4,17 @@ using UnityEngine;
 
 namespace Weapons
 {
-    public class Bullet: MonoBehaviour
+    public class Bullet: Projectile
     {
-        private void OnCollisionEnter(Collision other)
+        protected override void OnCollisionEnter(Collision other)
         {
-            Destroy(gameObject);
+            var otherHealth = other.gameObject.GetComponent<Health>();
+            if (other.gameObject.GetComponent<Health>() != null)
+            {
+                otherHealth.TakeDamage(damage);
+            }
+            
+            Destroy();
         }
     }
 }

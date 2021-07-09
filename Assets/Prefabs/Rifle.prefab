@@ -50,7 +50,7 @@ MonoBehaviour:
   spread: 5
   magazineSize: 25
   speed: 1
-  bulletPrefab: {fileID: 2301224917655791177, guid: 4b78de1e80066ff478f417debfdbd1f1, type: 3}
+  bulletPrefab: {fileID: 3782287456220412041, guid: 4b78de1e80066ff478f417debfdbd1f1, type: 3}
 --- !u!1 &5989768535447123632
 GameObject:
   m_ObjectHideFlags: 0

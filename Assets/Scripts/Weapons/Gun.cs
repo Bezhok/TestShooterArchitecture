@@ -66,10 +66,11 @@ namespace Weapons
         private void SpawnBullet()
         {
             // var bullet = Instantiate(bulletPrefab);
-            // bullet.startSpeed = gun.direction*speed;
+            // bullet.startImpulse = transform.forward*speed + new Vector3(0, Rand(-spread/2, spread/2), Rand(-spread/2, spread/2));
             // bullet.maxRange = maxRange;
-            // bullet.position = gun.position + Rand(0, spread)
+            // bullet.startPoint = gun.position;
             // bullet.damage = damage
+            // bullet.Launch();
         }
     }
 }
